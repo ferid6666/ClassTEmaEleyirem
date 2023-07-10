@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+$backgroundcolor: #F8F9FB;
+$font-color: #2E343F;
+$button-color: #437EF7;
+$sign-upfont: #437EF7;
+$log-infont: #FFF;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+
+
+nav {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background-color: $backgroundcolor;
+
+    img {
+        cursor: pointer;
+    }
+
+    .navbar_right {
+        display: flex;
+
+        .class1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            align-self: stretch;
+
+            border: none;
+            cursor: pointer;
+
+            p {
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                color: $sign-upfont;
+            }
+        }
+
+
+        .class2 {
+
+            margin-left: 25px;
+            display: flex;
+            padding: 12px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            border-radius: 6px;
+            background: var(--primary-600, #437EF7);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+            border: none;
+            cursor: pointer;
+
+            p {
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                color: $log-infont;
+            }
+        }
+
+
+
+    }
+}
+
+
+.nav_menu {
+    display: flex;
+    column-gap: 10px;
+
+
+    a {
+        text-align: center;
+        font-size: 16px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        color: $font-color;
+
+        display: flex;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: $border-radius;
+    }
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+#main1 {
+    display: flex;
+    justify-content: center;
+
+    .title {
+
+        width: 900px;
+        margin: auto;
+
+
+        h1 {
+
+            color: $font-color;
+            text-align: center;
+            font-family: Inter;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -0.52px;
+        }
+
+        p {
+            margin: 24px;
+            color: var(--gray-50, #5F6D7E);
+            text-align: center;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: -0.1px;
+        }
+
+        .undertitle1 {
+            border: none;
+            outline: none;
+            display: flex;
+            padding: 12px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            border-radius: 6px;
+            background: $sign-upfont;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+            color: $log-infont;
+        }
+
+        .undertitle2 {
+
+            display: flex;
+            padding: 12px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            border-radius: 6px;
+            border: 1px solid var(--neutral-700, #DAE0E6);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+            border-radius: 6px;
+            color: $font-color;
+        }
+
+        .classcentre {
+            display: flex;
+            justify-content: center;
+        }
+
+
+    }
+
+}
